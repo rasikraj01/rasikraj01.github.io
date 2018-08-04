@@ -12,6 +12,7 @@
    background: $color;
    color: $white;
 }
+
 @mixin social-link{
    font-family: $primary-font;
    font-size: $font-base;
@@ -19,13 +20,16 @@
    float:right;
    height:100%;
    line-height:45px;
-   margin: 0 20px;
+   margin: 0 5vh;
+   text-decoration: none;
    transition: all .2s;
 }
 @mixin social-link-hover{
+   transform : translateY(-5px);
    color: $light-grey;
    cursor: pointer;
 }
+
 @mixin link{
    font-family: $primary-font;
    font-size: $font-base;

@@ -8,32 +8,50 @@ body{
    background: $white;
    color: $black;
 }
-h1{
-   font-size: $font-extra-large;
-   font-family: $primary-font;
-   font-weight: $font-weight-5;
-
-   letter-spacing: 15px;
-}
-h2{
-   font-family: $primary-font;
-   font-size: $font-small;
-   font-weight: $font-weight-4;
-}
-.about{
-   font-family: $primary-font;
-   font-weight: $font-weight-1;
-   width: 550px;
-}
-.cover{
+.view-1{
+   width: 75vw;
    height: 300px;
-   width: 300px;
-   img{
-      height: inherit;
-      width: inherit;
-      box-shadow: rgba(0,0,0,.2) 6px 20px 24px;
+   position: relative;
+   transform: translate(10vw, 20vh);
+   .cover{
+      position: absolute;
+      height: 300px;
+      width: 300px;
+      img{
+         height: inherit;
+         width: inherit;
+         box-shadow: rgba(0, 0, 0, 0.15) 6px 10px 35px;
+      }
+   }
+
+   .desc{
+      position: absolute;
+      top: 0;
+      left: 300px;
+      margin-left: 20px;
+      height: 100%;
+
+      h1{
+         font-size: $font-extra-large;
+         font-family: $primary-font;
+         font-weight: $font-weight-5;
+
+         letter-spacing: 15px;
+      }
+      h2{
+         font-family: $primary-font;
+         font-size: $font-small;
+         font-weight: $font-weight-4;
+      }
+      .about{
+         font-family: $primary-font;
+         font-weight: $font-weight-1;
+         width: 550px;
+         margin-top: 50px;
+      }
    }
 }
+
 .sidebar{
    background: $grey;
    font-family: $primary-font;
@@ -42,7 +60,8 @@ h2{
    height: 100vh;
    width: 20vw;
    color: $white;
-
+   position: absolute;
+   top: 0;
    ul{
       list-style: none;
       text-align: left;
@@ -60,22 +79,23 @@ h2{
    }
 }
 .social-media{
-   width: 101vh;
-   position: fixed;
+   display: none;
+   width: 100vh;
    height: 45px;
    transform-origin: top;
-   transform: rotate(-90deg) translateX(123vh) translateY(69vw);
-
+   transform: rotate(-90deg) translateX(-5em) translateY(62em);
    ul{
       list-style: none;
       margin: auto;
       width: 80vh;
 
-      li{
+      li a{
          @include social-link;
       }
-
-      li:hover{
+      li a:visited {
+         @include social-link;
+      }
+      li a:hover{
          @include social-link-hover;
       }
 
