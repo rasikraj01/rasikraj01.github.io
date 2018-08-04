@@ -1,0 +1,21 @@
+@mixin button($color){
+   font-size: $font-base;
+   height: 40px;
+   width: 140px;
+   background: #ffffff;
+   border: 1px solid $color;
+   color: $color;
+   text-align: center;
+   line-height: 40px;
+}
+@mixin button-hover($color){
+   background: $color;
+   color: $white;
+}
+@mixin social-link{
+
+}
+
+@mixin link{
+
+}
