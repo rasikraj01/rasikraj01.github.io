@@ -27,5 +27,13 @@
    cursor: pointer;
 }
 @mixin link{
-
+   font-family: $primary-font;
+   font-size: $font-base;
+   color: $white;
+   margin: 10px auto;
+   transition : all .3s;
+}
+@mixin link-hover{
+   transform : translateX(10px);
+   cursor: pointer;
 }
