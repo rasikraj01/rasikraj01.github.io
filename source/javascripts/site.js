@@ -8,8 +8,8 @@ projects.addEventListener('click', () => {
    sidebar[0].classList.add('sidebar-off');
    social_media[0].classList.add('social-media-off');
    view_1[0].classList.add('view-1-off');
-   const li = document.querySelectorAll('.sidebar ul li');
-   li.forEach(key => {key.style.display = 'none';})
+   const ul = document.querySelectorAll('.sidebar ul');
+   ul.forEach(key => {key.style.display = 'none';})
 
    setTimeout(() => {
       social_media[0].style.display = 'none';

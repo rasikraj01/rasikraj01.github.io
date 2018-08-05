@@ -1,0 +1,45 @@
+.view-2{
+   grid-column: 2/10;
+   .project{
+      width: 20vw;
+      box-shadow: rgba(0,0,0,.1) 0 4px 6px;
+         h2{
+            font-family: $secondary-font;
+            color:$pink;
+            font-size: $font-large;
+            font-weight: $font-weight-4;
+            padding: 25px 0 5px 25px;
+         }
+         h3{
+            font-family: $secondary-font;
+            font-size: $font-small;
+            color:$black;
+            font-weight: $font-weight-4;
+            padding-left: 25px;
+         }
+         .project-desc{
+            font-family: $secondary-font;
+            font-size: $font-base;
+            color: $black;
+            font-weight: $font-weight-1;
+            padding: 25px;
+            padding-bottom: 0px;
+         }
+         .tools{
+            display: flex;
+            padding: 20px;
+            img{
+               height: 30px;
+            }
+         }
+         .links{
+            display: flex;
+             div{
+               @include button($pink);
+            }
+            div:hover{
+            @include button-hover($pink);
+            }
+      }
+   }
+}
