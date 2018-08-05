@@ -17,15 +17,13 @@
    font-family: $primary-font;
    font-size: $font-base;
    color: $black;
-   float:right;
    height:100%;
-   line-height:45px;
-   margin: 0 5vh;
-   text-decoration: none;
+   display: inline-block;
    transition: all .2s;
+   text-decoration: none;
 }
 @mixin social-link-hover{
-   transform : translateY(-5px);
+   transform : translateX(5px);
    color: $light-grey;
    cursor: pointer;
 }
