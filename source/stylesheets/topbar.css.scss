@@ -1,0 +1,41 @@
+.topbar{
+   position: absolute;
+   right: 20px;
+   display: none;
+   ul{
+      list-style: none;
+      display: flex;
+      margin: 20px 30px 0 0;
+      li{
+         font-family: $secondary-font;
+         font-style: clac($font-base + 2 );
+         color: $black;
+         padding: 5px 15px;
+
+         transition: all .1s ease-out;
+      }
+      li:last-child:hover{
+         transform: translateY(-5px);
+         cursor: pointer;
+      }
+      li:first-child{
+         font-weight: $font-weight-3;
+         border: 1px solid $black;
+         border-radius: 4px;
+         z-index: $z-index-1;
+         position: relative;
+      }
+      li:first-child:before{
+         @include button-before-config($black);
+         transform-origin: 0% 0%;
+         transform: scaleY(0);
+      }
+      li:first-child:hover:before{
+         transform: scaleY(1);
+      }
+      li:first-child:hover{
+         color: $white;
+         cursor: pointer;
+      }
+   }
+}
