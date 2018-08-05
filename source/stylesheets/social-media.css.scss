@@ -4,6 +4,7 @@
    justify-content: center;
 
    grid-column: 10/11;
+   transition:all .5s ease-out;
    ul{
       list-style: none;
       overflow: hidden;
@@ -35,4 +36,7 @@
       }
 
    }
+}
+.social-media-off{
+   opacity: 0;
 }
