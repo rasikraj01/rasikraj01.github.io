@@ -4,7 +4,7 @@
    display: none;
    opacity: 0;
    transform : translateY(-20px);
-   transition: all .5s;
+   transition: all .3s ease-out;
    ul{
       list-style: none;
       display: flex;
