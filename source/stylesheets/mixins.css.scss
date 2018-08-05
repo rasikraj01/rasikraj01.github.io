@@ -1,16 +1,40 @@
 @mixin button($color){
+   display: inline-block;
    font-size: $font-base;
+   font-family: $secondary-font;
+   font-weight: $font-weight-1;
    height: 40px;
-   width: 140px;
+   width: 100px;
    background: #ffffff;
    border: 1px solid $color;
    color: $color;
    text-align: center;
    line-height: 40px;
+   border-radius: 4px;
+   margin: 10px;
+   position: relative;
+   z-index: $z-index-1;
+   transition: all .2s;
 }
-@mixin button-hover($color){
+@mixin button-before($color){
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   content: " ";
+   z-index: $z-index-0;
    background: $color;
+   transform: scaleX(0);
+   transform-origin: 0 50%;
+   transition: transform .3s ease-out;
+}
+@mixin botton-before-hover{
+      transform: scaleX(1);
+}
+@mixin button-hover{
    color: $white;
+   cursor:pointer;
 }
 
 @mixin social-link{

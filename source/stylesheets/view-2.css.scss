@@ -2,7 +2,7 @@
    grid-column: 2/10;
    .project{
       width: 20vw;
-      box-shadow: rgba(0,0,0,.1) 0 4px 6px;
+      box-shadow: 4px 4px 6px rgba(0,0,0,.1) ;
          h2{
             font-family: $secondary-font;
             color:$pink;
@@ -34,11 +34,19 @@
          }
          .links{
             display: flex;
+            flex-flow: row;
+            justify-content: center;
              div{
                @include button($pink);
             }
+            div:before{
+               @include button-before($pink);
+            }
             div:hover{
-            @include button-hover($pink);
+            @include button-hover;
+            }
+            div:hover:before{
+               @include botton-before-hover;
             }
       }
    }
