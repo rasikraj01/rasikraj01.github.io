@@ -10,6 +10,9 @@
    width: 90vw;
    margin: auto;
    display: none;
+   opacity: 0;
+   transform: translateX(-20px);
+   transition: all .5s;
    .project-1{
       @include project($pink);
    }
@@ -19,4 +22,8 @@
    .project-3{
       @include project($purple);
    }
+}
+.view-2-on{
+   opacity: 1;
+   transform: translateX(0);
 }

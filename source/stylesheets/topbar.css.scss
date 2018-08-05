@@ -2,6 +2,9 @@
    position: absolute;
    right: 20px;
    display: none;
+   opacity: 0;
+   transform : translateY(-20px);
+   transition: all .5s;
    ul{
       list-style: none;
       display: flex;
@@ -38,4 +41,8 @@
          cursor: pointer;
       }
    }
+}
+.topbar-on{
+   opacity: 1;
+   transform : translateY(0px);
 }
