@@ -29,7 +29,7 @@
          position: relative;
       }
       li:first-child:before{
-         @include button-before-config($black);
+         @include button-before-config($black-v2);
          transform-origin: 0% 0%;
          transform: scaleY(0);
       }
