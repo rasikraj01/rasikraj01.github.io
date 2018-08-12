@@ -33,11 +33,14 @@ home[1].addEventListener('click', () => {
    view_2[0].classList.remove('view-2-on');
    topbar[0].classList.remove('topbar-on');
 
+
    setTimeout(() => {
       view_2[0].style.display = 'none';
       topbar[0].style.display = 'none';
       sidebar[0].classList.remove('sidebar-off');
    }, 500);
+
+   view_1[0].style.display = 'block';
 
    setTimeout(() => {
          social_media[0].classList.remove('social-media-off');
@@ -45,7 +48,6 @@ home[1].addEventListener('click', () => {
          const ul = document.querySelectorAll('.sidebar ul');
          ul.forEach(key => {key.style.display = 'block';})
          social_media[0].style.display = 'flex';
-         view_1[0].style.display = 'block';
 
    }, 1000);
 });
