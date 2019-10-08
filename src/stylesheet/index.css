@@ -44,6 +44,7 @@ body .container figure img {
 body .container .details {
   height: 250px;
   padding-left: 40px;
+  color: white;
 }
 
 body .container .details h1 {
@@ -76,9 +77,9 @@ body .container .details .links {
 
 body .container .details .links i {
   font-size: 30px;
-  color: black;
   -webkit-transition: all .3s;
   transition: all .3s;
+  color: white;
 }
 
 body .container .details .links i a {

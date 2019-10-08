@@ -40,6 +40,7 @@ body{
         .details{
             height: 250px;
             padding-left:  40px;
+            color: white;
 
             h1{
                 font-size: 100px;
@@ -67,8 +68,8 @@ body{
                 
                 i{
                     font-size: 30px;
-                    color: black;
                     transition: all .3s;
+                    color: white;
                     a{
                         text-decoration: none;
                     }
