@@ -4,35 +4,65 @@
     padding: 0;
     -webkit-font-smoothing: antialiased;
 }
-.container{
-    width: 60vw;
-    background: red;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content:center;
+body{
 
-    figure{
-        width: 250px;
-        background: black;
-        height: 250px;
-        border-radius: 100%;
-    }
+    .container{
+        width: 70vw;
+        
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
 
-    .details{
-        background: #000;
-        height: fit-content;
+        display: flex;
+        
+        align-items: center;
+        justify-content:center;
 
-        h1{
-            font-size: 80px;
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
+        figure{
+            min-width: 250px;
+            min-height: 250px;
+            
+            img{
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+            }
         }
 
-        h2{
-            font-size: 25px;
-            font-family: 'IBM Plex Sans', sans-serif;
-            text-transform: uppercase;
+        .details{
+            height: 250px;
+            padding-left:  40px;
+
+            h1{
+                font-size: 100px;
+                letter-spacing: 8px;
+                font-family: 'Montserrat', sans-serif;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
+            h2{
+                font-size: 25px;
+                font-family: 'IBM Plex Sans', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 11px;
+                font-weight: 100;
+            }
+
+            .links{
+                padding-top: 30px;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                
+                i{
+                    font-size: 30px;
+                }
+            }
         }
     }
 }
