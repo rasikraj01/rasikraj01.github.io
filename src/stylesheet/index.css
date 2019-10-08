@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300|Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body .container {
+  width: 70vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container figure {
+  min-width: 250px;
+  min-height: 250px;
+}
+
+body .container figure img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+body .container .details {
+  height: 250px;
+  padding-left: 40px;
+}
+
+body .container .details h1 {
+  font-size: 100px;
+  letter-spacing: 8px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+body .container .details h2 {
+  font-size: 25px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 11px;
+  font-weight: 100;
+}
+
+body .container .details .links {
+  padding-top: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .container .details .links i {
+  font-size: 30px;
+}
+/*# sourceMappingURL=index.css.map */
