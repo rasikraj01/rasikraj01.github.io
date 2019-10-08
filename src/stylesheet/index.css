@@ -5,6 +5,12 @@
   -webkit-font-smoothing: antialiased;
 }
 
+body #particle-js {
+  background: #232741;
+  width: 100%;
+  height: 100%;
+}
+
 body .container {
   width: 70vw;
   position: absolute;
