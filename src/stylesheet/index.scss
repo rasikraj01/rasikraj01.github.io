@@ -4,8 +4,8 @@
     padding: 0;
     -webkit-font-smoothing: antialiased;
 }
-body{
-
+body{    
+    
     .container{
         width: 70vw;
         
@@ -41,7 +41,7 @@ body{
                 letter-spacing: 8px;
                 font-family: 'Montserrat', sans-serif;
                 text-transform: uppercase;
-                font-weight: 600;
+                font-weight: 600;                
             }
 
             h2{
@@ -50,6 +50,7 @@ body{
                 text-transform: uppercase;
                 letter-spacing: 11px;
                 font-weight: 100;
+                // color: #f0134d;
             }
 
             .links{
@@ -61,6 +62,14 @@ body{
                 
                 i{
                     font-size: 30px;
+                    color: black;
+                    transition: all .3s;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                i:hover{
+                    transform: scale(1.4);
                 }
             }
         }

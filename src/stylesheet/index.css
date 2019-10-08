@@ -70,5 +70,17 @@ body .container .details .links {
 
 body .container .details .links i {
   font-size: 30px;
+  color: black;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+body .container .details .links i a {
+  text-decoration: none;
+}
+
+body .container .details .links i:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 /*# sourceMappingURL=index.css.map */
