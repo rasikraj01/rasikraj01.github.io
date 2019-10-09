@@ -26,28 +26,54 @@ body{
         align-items: center;
         justify-content:center;
 
+        @media only screen and (max-width: 786px) {
+            flex-flow: column;    
+        }
         figure{
-            min-width: 250px;
-            min-height: 250px;
+            max-width: 250px;
+            max-height: 250px;
+            
             
             img{
                 width: 250px;
                 height: 250px;
                 border-radius: 50%;
+
+            
+                @media only screen and (max-width: 1024px) {
+                    width: 200px;
+                    height: 200px;
+                }
+
+                @media only screen and (max-width: 786px) {
+                    padding-bottom: 2vw;  
+                }
             }
         }
 
         .details{
-            height: 250px;
             padding-left:  40px;
             color: white;
+
+
+            @media only screen and (max-width: 786px) {
+                padding-left: 0;  
+            }
 
             h1{
                 font-size: 100px;
                 letter-spacing: 8px;
                 font-family: 'Montserrat', sans-serif;
                 text-transform: uppercase;
-                font-weight: 600;                
+                font-weight: 600;
+            
+                @media only screen and (max-width: 1024px) {
+                    font-size: 75px;
+                }
+                @media only screen and (max-width: 425px) {
+                    text-align: center;
+                    font-size: 50px;  
+                }
             }
 
             h2{
@@ -57,6 +83,14 @@ body{
                 letter-spacing: 11px;
                 font-weight: 100;
                 // color: #f0134d;
+                
+                @media only screen and (max-width: 1024px) {
+                    letter-spacing: 5.6px;                
+                }
+                @media only screen and (max-width: 425px) {
+                    text-align: center;
+                    font-size: 15px;
+                }
             }
 
             .links{

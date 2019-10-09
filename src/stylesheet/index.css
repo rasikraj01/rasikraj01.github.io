@@ -30,9 +30,18 @@ body .container {
           justify-content: center;
 }
 
+@media only screen and (max-width: 786px) {
+  body .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
 body .container figure {
-  min-width: 250px;
-  min-height: 250px;
+  max-width: 250px;
+  max-height: 250px;
 }
 
 body .container figure img {
@@ -41,10 +50,28 @@ body .container figure img {
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 1024px) {
+  body .container figure img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  body .container figure img {
+    padding-bottom: 2vw;
+  }
+}
+
 body .container .details {
-  height: 250px;
   padding-left: 40px;
   color: white;
+}
+
+@media only screen and (max-width: 786px) {
+  body .container .details {
+    padding-left: 0;
+  }
 }
 
 body .container .details h1 {
@@ -55,12 +82,38 @@ body .container .details h1 {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 1024px) {
+  body .container .details h1 {
+    font-size: 75px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body .container .details h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
 body .container .details h2 {
   font-size: 25px;
   font-family: 'IBM Plex Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 11px;
   font-weight: 100;
+}
+
+@media only screen and (max-width: 1024px) {
+  body .container .details h2 {
+    letter-spacing: 5.6px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body .container .details h2 {
+    text-align: center;
+    font-size: 15px;
+  }
 }
 
 body .container .details .links {
