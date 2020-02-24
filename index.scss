@@ -48,6 +48,11 @@ html{
         .intro{
             color: $dark-blue;
             font-size: 20px;
+            span{
+                i{
+                    color: $red;
+                }
+            }
         }
         .links{
             margin-top: 20px;
