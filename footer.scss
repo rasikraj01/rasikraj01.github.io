@@ -1,0 +1,24 @@
+@import './variables.scss';
+
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100vw;
+    background-color: $dark-blue;
+    p{
+        color: $light-blue;
+        width: 80vw;
+        margin: auto;
+        line-height: 40px;
+        text-align: center;
+    i{
+        color: $red;
+    }
+    a{
+        color: $bg-color;
+        text-decoration: none;
+    }
+    }
+    
+}

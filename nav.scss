@@ -1,0 +1,58 @@
+@import './variables.scss';
+
+
+nav {
+    height: 70px;
+    width: 100vw;
+    background-color: $bg-color;
+    
+    ul{
+        width: 80vw;
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+
+        @media only screen and (max-width: 425px) {
+            justify-content: space-evenly;
+            width: 100vw;
+        }
+        li{
+            list-style: none;
+            line-height: 70px;
+            padding: 0 20px;
+
+            @media only screen and (max-width: 425px) {
+                padding: 0;
+            }
+            a{
+                font-size: 18px;
+                color: $dark-blue;
+                text-decoration: none;
+                transition: all .3s;
+            }
+            .highlight{
+                font-weight: 600;
+            }
+            .contact{
+                border-radius: 20px;
+                border: 2px solid $dark-blue;
+                padding : 5px 20px;
+            }
+            i{
+                padding-right: 7px;
+            }
+            .contact:hover{
+                background-color: $dark-blue;
+                color: $light-blue;
+            
+            }
+        }
+
+        .rasik{
+            margin-right: auto;
+            padding:0;
+        }
+
+    }
+}

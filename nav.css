@@ -1,0 +1,71 @@
+nav {
+  height: 70px;
+  width: 100vw;
+  background-color: #BAE8E8;
+}
+
+nav ul {
+  width: 80vw;
+  max-width: 1100px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media only screen and (max-width: 425px) {
+  nav ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100vw;
+  }
+}
+
+nav ul li {
+  list-style: none;
+  line-height: 70px;
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 425px) {
+  nav ul li {
+    padding: 0;
+  }
+}
+
+nav ul li a {
+  font-size: 18px;
+  color: #272343;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+nav ul li .highlight {
+  font-weight: 600;
+}
+
+nav ul li .contact {
+  border-radius: 20px;
+  border: 2px solid #272343;
+  padding: 5px 20px;
+}
+
+nav ul li i {
+  padding-right: 7px;
+}
+
+nav ul li .contact:hover {
+  background-color: #272343;
+  color: #e3f6f5;
+}
+
+nav ul .rasik {
+  margin-right: auto;
+  padding: 0;
+}
+/*# sourceMappingURL=nav.css.map */

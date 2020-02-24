@@ -1,0 +1,25 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100vw;
+  background-color: #272343;
+}
+
+footer p {
+  color: #e3f6f5;
+  width: 80vw;
+  margin: auto;
+  line-height: 40px;
+  text-align: center;
+}
+
+footer p i {
+  color: #ff2e63;
+}
+
+footer p a {
+  color: #BAE8E8;
+  text-decoration: none;
+}
+/*# sourceMappingURL=footer.css.map */
